@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    background-color: wheat;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+section{
+    background: #563208;
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+div{
+    height: 150px;
+    background-position: center;
+}
+
+header{
+    margin: 10px;
+}
+
+footer{
+    margin: 10px;
+}
+
+#bounty{
+    background: url(bounty.jpg);
+    background-size: cover;
+}
+
+#coco{
+    background: url(coco.png);
+    background-size: cover;
+}
+#japp{
+    background: url(japp.jpg);
+    background-size: cover;
+}
+
+#mars{
+    background: url(mars.jpg);
+    background-size: cover;
+}
+
+#twix{
+    background: url(twix.jpg);
+    background-size: cover;
+}

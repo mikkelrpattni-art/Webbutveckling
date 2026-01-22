@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    margin: 8px;
+}
+
+article{
+    flex: 3;
+}
+
+aside{
+    flex: 1;
+}
+
+article, aside{
+    border: lightgray solid 1px;
+    margin: 10px;
+}
+
+h1{
+    color: rgb(165, 46, 46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    border-bottom: lightgray solid 1px;
+    margin: 8px;
+    padding: 30px 0px 15px 0px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "moon_img    davinci_img     davinci"
+    "moon_img    napoleon_img    napoleon"
+    "moon        giza_img        giza"
+    "moon        ali_img         ali"
+    ;
+    padding: 5px;
+}
+
+#moon{
+    grid-area: moon;
+}
+
+#moon_img{
+    background: url(images/moonlanding.webp);
+    background-size: cover;
+    grid-area: moon_img;
+}
+
+#davinci{
+    grid-area: davinci;
+}
+
+#davinci_img{
+    background: url(images/vitruvian_man_da_vinci.webp);
+    background-size: cover;
+    grid-area: davinci_img;
+}
+
+#napoleon{
+    grid-area: napoleon;
+}
+
+#napoleon_img{
+    background: url(images/napoleon.webp);
+    background-size: cover;
+    grid-area: napoleon_img;
+}
+
+#giza{
+    grid-area: giza;
+}
+
+#giza_img{
+    background: url(images/pyramids.webp);
+    background-size: cover;
+    grid-area: giza_img;
+}
+
+#ali{
+    grid-area: ali;
+}
+
+#ali_img{
+    background: url(images/ali.webp);
+    background-size: cover;
+    grid-area: ali_img;
+}
+
+section{
+    margin: 6px;
+}
+
+#connect{
+    margin: 30px 0 0 20px;
+}
+
+.connect{
+    margin: 5px;
+}
+
+span{
+    color: rgb(165, 45, 45);
+}

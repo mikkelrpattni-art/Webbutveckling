@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+header{
+    background-color: rgb(222, 13, 13);
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    margin: 0px;
+    border-left: gold solid 50px ;
+    border-right: gold solid 50px;
+    padding: 20px;
+}
+
+main > p{
+    font-size: 18 px;
+}
+
+#pannkakor{
+    background: url(pannkakor.jpg);
+    background-size: cover;
+    height: 100px;
+    padding : 100px;
+}
+
+#ingredienser{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#instruktioner{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width:600px){
+    div{
+        display: flex;
+    }
+    
+    #ingredienser{
+        margin: 10px;
+        flex: 1;
+    }
+    
+    #instruktioner{
+        margin: 10px;
+        flex: 1;
+    }
+}
+
+footer{
+    background: maroon;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

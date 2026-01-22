@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "H      H       US      US"
+        "IM     R       R       TBJ"
+    ;
+}
+
+section{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1px;
+}
+
+#H{
+    background: url(images/heat.jpg);
+    background-size: cover;
+    grid-area: H;
+}
+
+
+#US{
+    background: url(images/usualsuspects.jpg);
+    background-size: cover;
+    grid-area: US;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+#IM{
+    background: url(images/insideman.jpg);
+    background-size: cover;
+    grid-area: IM;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+#R{
+    background: url(images/rififi.jpg);
+    background-size: cover;
+    grid-area: R;
+}
+
+#TBJ{
+    background: url(images/bankjob.jpg);
+    background-size: cover;
+    grid-area: TBJ;
+}

@@ -1,0 +1,20 @@
+@charset "UFT-8";
+
+#yttre {
+    background: #DDF;
+    border: 4px solid #006;
+    height: 300px;
+    margin: 120px 20px;
+    position: relative;
+}
+
+#inre {
+background: #FDC;
+border: 4px solid #930;
+position: absolute;
+right: 20px;
+/* top: 20px; */
+z-index: 5;
+/* left: 20px; */
+bottom: 20px;
+}

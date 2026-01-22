@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+header{
+    background-color: rgb(122, 0, 75);
+    text-align: center;
+    color: rgb(123, 255, 106);
+    margin: 0;
+    padding: 30px;
+    border: rgb(78, 17, 28) 15px double;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 15px;
+}
+
+nav{
+    background: url(images/frukt_bakgrund.jpg);
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    grid-template-areas:
+    "nordamerika     världen       afrika      asien"
+    "sydamerika      europa        top5       australien"
+    ;
+    padding: 10px;
+    border: rgb(179, 144, 91) 15px double;
+}
+
+#nordamerika{
+    background: url(images/nordamerika.jpg);
+    background-size: cover;
+    grid-area: nordamerika;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#sydamerika{
+    background: url(images/sydamerika.jpg);
+    background-size: cover;
+    grid-area: sydamerika;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#europa{
+    background: url(images/europa.jpg);
+    background-size: cover;
+    grid-area: europa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background: url(images/afrika.jpg);
+    background-size: cover;
+    grid-area: afrika;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: paleturquoise 8px solid;
+}
+
+#asien{
+    background: url(images/asien.jpg);
+    background-size: cover;
+    grid-area: asien;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#australien{
+    background: url(images/australien.jpg);
+    background-size: cover;
+    grid-area: australien;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}               
+
+#världen{
+    grid-area: världen;
+    display: flexbox;
+    text-align: center;
+    align-content: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+    padding: 20px;
+}
+
+#top10{
+    grid-area: top5;
+    text-align: center;
+    align-self: center;
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+}
+
+section{
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section a{
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: purple;
+}
+
+main{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "ackee      kiwiano"
+    "mango      dadelpalm"
+    ;
+    padding: 20px 150px 10px 150px;
+}
+
+main section{
+    display: flexbox;
+    align-content: center;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    font-size: 20px;
+}
+
+h4{
+    background: white;
+}
+
+#ackee{
+    background: url(images/ackee.jpg);
+    background-size: cover;
+    grid-area: ackee;
+}
+
+#kiwiano{
+    background: url(images/kiwiano.webp);
+    background-size: cover;
+    grid-area: kiwiano;
+}
+
+#mango{
+    background: url(images/mango.jpg);
+    background-size: cover;
+    grid-area: mango;
+}
+
+#dadelpalm{
+    background: url(images/dadelpalm.jpg);
+    background-size: cover;
+    grid-area: dadelpalm;
+}

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+body{
+    height: 600px;
+    width: 700px;
+    padding: 0 0 0 300px;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a      b       c"
+    "d      .       e"
+    "f      g       h"
+    "i      paris   paris"
+    "j      paris   paris"
+    ;
+}
+
+#a{
+    background: url(images/a.jpg);
+    background-size: cover;
+    grid-area: a;
+}
+
+#b{
+    background: url(images/b.webp);
+    background-size: cover;
+    grid-area: b;
+}
+
+#c{
+    background: url(images/c.jpg);
+    background-size: cover;
+    border-top-right-radius: 30px;
+    grid-area: c;
+}
+
+#d{
+    background: url(images/d.jpg);
+    background-size: cover;
+    grid-area: d;
+}
+
+#e{
+    background: url(images/e.jpg);
+    background-size: cover;
+    grid-area: e;
+}
+
+#f{
+    background: url(images/f.jpg);
+    background-size: cover;
+    grid-area: f;
+}
+
+#g{
+    background: url(images/g.webp);
+    background-size: cover;
+    grid-area: g;
+}
+
+#h{
+    background: url(images/h.jpg);
+    background-size: cover;
+    grid-area: h;
+    border-bottom-right-radius: 30px;
+}
+
+#i{
+    background: url(images/i.jpg);
+    background-size: cover;
+    grid-area: i;
+}
+
+#j{
+    background: url(images/j.jpg);
+    background-size: cover;
+    grid-area: j;
+}
+
+#paris{
+    grid-area: paris;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

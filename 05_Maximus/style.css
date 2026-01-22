@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+header{
+    background: #333;
+    color: white;
+    padding: 40px 0 40px 0; 
+    text-align: center;
+}
+
+h1{
+    color: #fc3;
+    margin: 0 0 10px 0;
+    font-weight: normal;
+}
+
+h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+nav{
+    background: #555;
+}
+
+nav a{
+    background: #444;
+    color: #fc3;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav a:hover{
+    background: #666;
+}
+
+nav a span{
+    color: gray;
+}
+
+main{
+    display: flex;
+}
+
+article{
+    flex: 3;
+    background: #eee;
+    padding: 10px;
+}
+
+.article{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+.article span{
+    border: 2px solid #fc3;
+    border-radius: 6px;
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 10px 5px 10px;
+}
+
+td{
+    border: 2px lightgrey solid;
+    padding: 8px;
+}
+
+td:first-child{
+    background-color: rgb(145, 145, 145);
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(203, 203, 203);
+}
+
+aside{
+    flex: 2;
+    padding: 10px;
+}
+
+aside div{
+    padding: 110px 10px 10px 10px;
+    background-size: cover;
+}
+
+aside div section{
+    background: rgba(0, 0, 0, 0.5);
+    color:white;
+    padding: 10px;
+}
+
+aside div section p{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+aside div section h4{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+#Venedig{
+    background: url('images/venedig.jpg');
+    margin-bottom: 10px;
+}
+
+#Sangimignano{
+    background: url('images/sangimignano.jpg');
+}
+
+
+footer{
+    display: flex;
+    background: #333;
+    padding: 10px;
+}
+
+footer section{
+    flex: 1;
+    color: white;
+}
+
+h5{
+    color:#fc3;
+    margin:0px;
+    font-size: 15px;
+}
+
+footer section p{
+    margin: 4px 4px 0 0;
+}
