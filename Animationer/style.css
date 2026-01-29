@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0;
+    padding: 20px 5px 20px 5px;
+    background-color:rgb(218, 187, 146);
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+header p{
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width:400px){
+
+}
+
+#box1{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    transition: height 2s, background-color 2s;
+}
+
+#box1:hover{
+    height: 200px;
+    width: 50px;
+    background-color: blue;
+}
+
+div{
+    margin: 10px;
+}
+
+div > h3{
+    text-align: center;
+}
+
+#transition{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#animations{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin: 10px;
+}
+
+@keyframes box2{
+    0% {background-color: black; top: 0px;}
+    25% {background-color: gray; top: 50px;}
+    50% {background-color: lightgray; top: 0px;}
+    75% {background-color: white; top: 50px;}
+    100% {background-color: black; top: 0px;}
+}
+
+#box2{
+    height: 50px;
+    width: 50px;
+    border: 3px black solid;
+    background-color: black;
+    position: relative;
+    animation-name: box2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.center{
+    text-align: center;
+}

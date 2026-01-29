@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Hur man animerar i med Transitions och Animation (@keyframes)</p>
+    </header>
+    <main>
+        <section id="transition" class="center">
+            <p>Lägg musen på boxen</p>
+            <div id="box1"></div>
+            <p>och se hur den ändras!</p>
+        </section>
+        <div>
+            <h3>Transitions</h3>
+            <p class="center">
+                Man kan animera med hjälp av transitions:
+            </p>
+            <p>
+                &lt;div id="box"&gt;
+                <br>
+                <br>
+                #box{ <br>
+                    height: 50px; <br>
+                    width: 50px; <br>
+                    background-color: red; <br>
+                    <b>transition: height 2s, background-color 2s;</b><br>
+                }<br>
+                <br>
+                #box:hover{<br>
+                    height: 200px;<br>
+                    width: 50px;<br>
+                    background-color: blue;<br>
+                }
+            </p>
+            <p class="center">
+                Använd <b>transition</b> för att visa hur lång tid det kommer att ta att göra ändringen. Därefter skriver du din element och lägger till <b>:hover</b>. Det gör att din transition sker när man håller muspekaren över elementet. I "#box:hover" skriver jag vad det är som kommer att ändras när jag håller muspekaren över box.
+            </p>
+        </div>
+        <div>
+            <h3>@keyframes</h3>
+            <p class="center">
+                Man kan också animera med hjälp av @keyframes: 
+            </p>
+            <section id="animations">
+                <div id="box2"></div>
+            </section>
+            <p>
+                &lt;div id="box2"&gt;
+                <br><br>
+                <b>@keyframes animation_with_keyframes</b>{<br>
+                    0% {background-color: black; top: 0px;} <br>
+                    25% {background-color: gray; top: 50px;} <br>
+                    50% {background-color: lightgray; top: 0px;} <br>
+                    75% {background-color: white; left: top: 50px;} <br>
+                    100% {background-color: black; left: top: 0px;} <br>
+                } <br>
+                <br>
+                #box2{ <br>
+                    height: 50px; <br>
+                    width: 50px; <br>
+                    border: 3px black solid; <br>
+                    background-color: black; <br>
+                    position: relative; <br>
+                    <b>animation-name: animation_with_keyframes; <br>
+                    animation-duration: 5s; <br>
+                    animation-iteration-count: infinite;</b> <br>
+                }
+            </p>
+            <p class="center">
+                En animation med @keyframes låter en element ändra från en style till en annan. Man kan ändra så många CSS properties som helst, hur länge som helst.
+            </p>
+            <p class="center">
+                Jag gjorde att boxen ovanför ska börja svart och sedan ändra gradvis till vit samtidigt som den rör sig upp och ner. Med hjälp av procent berättade jag när den skulle ändras till vad.
+            </p>       
+            <p class="center">
+                Man behöver ge ett namn till animationen och sedan lägger man in animationen med hjälp av egenskapen <b>animation-name</b>. Man behöver också skriva hur långt tid animationen kommer ta med hjälp av <b>animation-duration</b> och även hur många gånger animationen spelas med "<b>animation-iteration-count</b>.    
+            </p>
+        </div>
+    </main>
+</body>
+</html>
