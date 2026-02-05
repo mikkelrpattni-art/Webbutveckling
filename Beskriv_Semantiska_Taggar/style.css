@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#truenav{
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    margin: 0px;
+    display: flex;
+    background: yellowgreen;
+}
+
+a{
+    flex: 1;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 40px;
+    font-size: 30px;
+    margin: 30px;
+    color: darkred;
+}
+
+.beskrivning{
+    height: 100vh;
+    padding: 100px;
+    background: lavender;
+    border: 100px double white;
+}
+
