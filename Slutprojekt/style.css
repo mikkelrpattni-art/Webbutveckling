@@ -1,1 +1,50 @@
 @charset "UTF-8";
+
+:root{
+    --bg_stars: url(images/background_stars.gif);
+    --bg_black: black;
+    --text_light: white;
+    --border_light: 1px solid cyan;
+}
+
+
+
+body{
+    background: var(--bg_stars);
+    margin:0;
+}
+
+header{
+    color: var(--text_light);
+    border: var(--border_light);
+    height: 70px;
+    font-family:'Mirage_Bold';
+}
+
+nav{
+    border: var(--border_light);
+    background: var(--bg_black);
+    height: 400px;
+    width: 400px;
+}
+
+a{
+    color: var(--text_light);
+}
+
+@font-face{
+    font-family:'Bright_Orchid';
+    src: url('fonts/Bright_Orchid.ttf');
+    /* font-weight: normal;
+    font-style: normal; */
+
+    font-family:'Mirage_Bold';
+    src: url('fonts/Mirage_Bold_Free.ttf');
+    /* font-weight: normal;
+    font-style: normal; */
+
+    font-family:'Nasalization';
+    src: url('fonts/Nasalization.otf');
+    /* font-weight: normal;
+    font-style: normal; */
+}
