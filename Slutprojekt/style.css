@@ -7,7 +7,9 @@
     --border_light: 1px solid cyan;
 }
 
-
+h1{
+    color: var(--text_light);
+}
 
 body{
     background: var(--bg_stars);
@@ -18,33 +20,141 @@ header{
     color: var(--text_light);
     border: var(--border_light);
     height: 70px;
-    font-family:'Mirage_Bold';
+    font-family:'Good_Timing';
 }
 
 nav{
     border: var(--border_light);
     background: var(--bg_black);
+    color: var(--text_light);
     height: 400px;
     width: 400px;
+    position:relative;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    border: var(--border_light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a{
-    color: var(--text_light);
+    position: absolute;
+}
+
+/* Storlek */
+#jupiter-lik{
+    background: url(images/jupiter-lik/Fastest_Orbit_BIG.gif);
+    background-size: cover;
+    height: 125px;
+    width: 125px;
+}
+
+#jord-lik{
+    background: url(images/jord-lik/Diamond_Planet_BIG.gif);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+#annat{
+    background: url(images/background_stars.gif);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+/* position :hover */
+nav:hover #link1{
+    animation: none;
+    top: 137.5px;
+    left: 10px;
+}
+
+nav:hover #link2{
+    animation: none;
+    top: 175px;
+    left: 300px;
+}
+
+nav:hover #link3{
+    animation: none;
+    top: 175px;
+    left: 175px;
+}
+
+/* animation position  */
+#link1{
+    top: 137.5px;
+    left: 137.5px;
+    animation-name: jupiter_orbit;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#link2{
+    top: 175px;
+    left: 175px;
+    animation-name: earth_orbit;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#link3{
+    top: 175px;
+    left: 175px;
+}
+
+@keyframes jupiter_orbit{
+    0% {
+        transform: rotate(0deg) 
+              translateY(150px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(150px) rotate(-360deg);
+    }
+}
+
+@keyframes earth_orbit{
+    0% {
+        transform: rotate(0deg) 
+              translateY(80px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+              translateY(80px) rotate(-360deg);
+    }
 }
 
 @font-face{
-    font-family:'Bright_Orchid';
+    /* font-family:'Bright_Orchid';
     src: url('fonts/Bright_Orchid.ttf');
-    /* font-weight: normal;
+    font-weight: normal;
     font-style: normal; */
 
-    font-family:'Mirage_Bold';
+    /* font-family:'Mirage_Bold';
     src: url('fonts/Mirage_Bold_Free.ttf');
-    /* font-weight: normal;
+    font-weight: normal;
     font-style: normal; */
 
-    font-family:'Nasalization';
+    /* font-family:'Nasalization';
     src: url('fonts/Nasalization.otf');
-    /* font-weight: normal;
+    font-weight: normal;
     font-style: normal; */
+
+    font-family:'Good_Timing';
+    src: url('fonts/Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
 }
