@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* Ta Bort border när klar */
+:root{
+    --bg_stars: url(../images/background_stars.gif);
+    --bg_black: black;
+    --text_light: white;
+    --border_light: 1px solid cyan;
+    --border_light2: 1px solid red;
+    
+}
+
+body{
+    background: var(--bg_stars);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border: var(--border_light);
+    background: var(--bg_black);
+}
+
+h1{
+    color: var(--text_light);
+    font-family:'Good_Timing';
+    border: var(--border_light);
+}
+
+nav{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "hot_ice    closest"
+    "consumed   diamond"
+    "first      recent "
+    "water      cold   "
+    "carbon     .      "
+    ;
+}
+
+.hot_ice{
+    grid-area: hot_ice;
+    background: url(../images/jord-lik/Burning_Ice.gif);
+    background-size: cover;
+}
+
+.closest{
+    grid-area: closest;
+    background: url(../images/jord-lik/Closest.gif);
+    background-size: cover;
+}
+
+.consumed{
+    grid-area: consumed;
+    background: url(../images/jord-lik/Consumed.gif);
+    background-size: cover;
+}
+
+.diamond{
+    grid-area: diamond;
+    background: url(../images/jord-lik/Diamond_Planet.gif);
+    background-size: cover;
+}
+
+.first{
+    grid-area: first;
+    background: url(../images/jord-lik/First_discovered.gif);
+    background-size: cover;
+}
+
+.recent{
+    grid-area: recent;
+    background: url(../images/jord-lik/Recent.gif);
+    background-size: cover;
+}
+
+.water{
+    grid-area: water;
+    background: url(../images/jord-lik/Water_World.gif);
+    background-size: cover;
+}
+
+.cold{
+    grid-area: cold;
+    background: url(../images/jord-lik/50_kelvin.gif);
+    background-size: cover;
+}
+
+.carbon{
+    grid-area: carbon;
+    background: url(../images/jord-lik/Carbon_Planet.gif);
+    background-size: cover;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:var(--border_light2);
+    background: var(--bg_black);
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+div{
+    border: var(--border_light);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--text_light);
+    font-family:'Good_Timing';
+    font-size: 16px;
+    /* center the text on the links */
+}
+
+
+@font-face{
+    /* font-family:'Bright_Orchid';
+    src: url('fonts/Bright_Orchid.ttf');
+    font-weight: normal;
+    font-style: normal; */
+
+    /* font-family:'Mirage_Bold';
+    src: url('fonts/Mirage_Bold_Free.ttf');
+    font-weight: normal;
+    font-style: normal; */
+
+    /* font-family:'Nasalization';
+    src: url('fonts/Nasalization.otf');
+    font-weight: normal;
+    font-style: normal; */
+
+    font-family:'Good_Timing';
+    src: url('../fonts/Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* Ta Bort border när klar */
+:root{
+    --bg_stars: url(../images/background_stars.gif);
+    --bg_black: black;
+    --text_light: white;
+    --border_light: 1px solid cyan;
+    --border_light2: 1px solid red;
+    
+}
+
+body{
+    background: var(--bg_stars);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    border: var(--border_light);
+    background: var(--bg_black);
+}
+
+h1{
+    color: var(--text_light);
+    font-family:'Good_Timing';
+    border: var(--border_light);
+}
+
+nav{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "browndwarf     darkest"
+    "eaten          farthest"
+    "fastestorbit   glass"
+    "hottest        leastdense"
+    "longestorbit   magenta"
+    "tatooine       ."
+    ;
+}
+
+.browndwarf{
+    grid-area: browndwarf;
+    background: url(../images/jupiter-lik/Brown_Dwarf.gif);
+    background-size: cover;
+}
+
+.darkest{
+    grid-area: darkest;
+    background: url(../images/jupiter-lik/Darkest.gif);
+    background-size: cover;
+}
+
+.eaten{
+    grid-area: eaten;
+    background: url(../images/jupiter-lik/Eaten_Planet.gif);
+    background-size: cover;
+}
+
+.farthest{
+    grid-area: farthest;
+    background: url(../images/jupiter-lik/Farthest.gif);
+    background-size: cover;
+}
+
+.fastestorbit{
+    grid-area: fastestorbit;
+    background: url(../images/jupiter-lik/Fastest_Orbit.gif);
+    background-size: cover;
+}
+
+.glass{
+    grid-area: glass;
+    background: url(../images/jupiter-lik/Glass_Clouds.gif);
+    background-size: cover;
+}
+
+.hottest{
+    grid-area: hottest;
+    background: url(../images/jupiter-lik/Hottest.gif);
+    background-size: cover;
+}
+
+.leastdense{
+    grid-area: leastdense;
+    background: url(../images/jupiter-lik/Least_dense.gif);
+    background-size: cover;
+}
+
+.longestorbit{
+    grid-area: longestorbit;
+    background: url(../images/jupiter-lik/Longest_orbit.gif);
+    background-size: cover;
+}
+
+.magenta{
+    grid-area: magenta;
+    background: url(../images/jupiter-lik/Magenta_Color.gif);
+    background-size: cover;
+}
+
+.tatooine{
+    grid-area: tatooine;
+    background: url(../images/jupiter-lik/Tatooine_Like.gif);
+    background-size: cover;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:var(--border_light2);
+    background: var(--bg_black);
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+div{
+    border: var(--border_light);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--text_light);
+    font-family:'Good_Timing';
+    font-size: 16px;
+    /* center the text on the links */
+}
+
+/* font för h1 */
+@font-face{
+    /* font-family:'Bright_Orchid';
+    src: url('fonts/Bright_Orchid.ttf');
+    font-weight: normal;
+    font-style: normal; */
+
+    /* font-family:'Mirage_Bold';
+    src: url('fonts/Mirage_Bold_Free.ttf');
+    font-weight: normal;
+    font-style: normal; */
+
+    /* font-family:'Nasalization';
+    src: url('fonts/Nasalization.otf');
+    font-weight: normal;
+    font-style: normal; */
+
+    font-family:'Good_Timing';
+    src: url('../fonts/Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Ta Bort border när klar */
 :root{
     --bg_stars: url(images/background_stars.gif);
     --bg_black: black;
@@ -50,21 +50,21 @@ a{
 
 /* Storlek */
 #jupiter-lik{
-    background: url(images/jupiter-lik/Fastest_Orbit_BIG.gif);
+    background: url(images/jupiter-lik/Fastest_Orbit.gif);
     background-size: cover;
-    height: 125px;
-    width: 125px;
+    height: 75px;
+    width: 75px;
 }
 
 #jord-lik{
-    background: url(images/jord-lik/Diamond_Planet_BIG.gif);
+    background: url(images/jord-lik/Diamond_Planet.gif);
     background-size: cover;
     height: 50px;
     width: 50px;
 }
 
 #annat{
-    background: url(images/background_stars.gif);
+    background: url(images/annat/Hoags_object.jpg);
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -73,8 +73,8 @@ a{
 /* position :hover */
 nav:hover #link1{
     animation: none;
-    top: 137.5px;
-    left: 10px;
+    top: 162px;
+    left: 30px;
 }
 
 nav:hover #link2{
@@ -89,10 +89,10 @@ nav:hover #link3{
     left: 175px;
 }
 
-/* animation position  */
+/* Animation position, should be centre of nav box.  */
 #link1{
-    top: 137.5px;
-    left: 137.5px;
+    top: 162px;
+    left: 162px;
     animation-name: jupiter_orbit;
     animation-duration: 10s;
     animation-iteration-count: infinite;
