@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Ta Bort border när klar */
+/* Ta bort border när klar */
 :root{
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
@@ -26,6 +26,7 @@ h1{
     color: var(--text_light);
     font-family:'Good_Timing';
     border: var(--border_light);
+    margin: 15px;
 }
 
 nav{
@@ -33,78 +34,74 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "andromeda     hoagsobject"
-    "M33          M87"
-    "NGC   SaggitariusA"
-    "Sombrero        TRAPPIST1"
-    "Whirlpool   ."
+    "andromeda      hoagsobject"
+    "M33            M87"
+    "NGC            SaggitariusA"
+    "Sombrero       TRAPPIST1"
+    "Whirlpool      ."
     ;
 }
 
-.browndwarf{
-    grid-area: browndwarf;
-    background: url(../images/jupiter-lik/Brown_Dwarf.gif);
+.andromeda{
+    grid-area: andromeda;
+    background: url(../images/annat/Andromeda.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hoagsobject{
+    grid-area: hoagsobject;
+    background: url(../images/annat/Hoags_object.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.M33{
+    grid-area: M33;
+    background: url(../images/annat/M33-X-7.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.M87{
+    grid-area: M87;
+    background: url(../images/annat/M87_star.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.NGC{
+    grid-area: NGC;
+    background: url(../images/annat/NGC_6753.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.SaggitariusA{
+    grid-area: SaggitariusA;
+    background: url(../images/annat/Saggitarius_Astar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Sombrero{
+    grid-area: Sombrero;
+    background: url(../images/annat/Sombrero_Galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.TRAPPIST1{
+    grid-area: TRAPPIST1;
+    background: url(../images/annat/TRAPPIST-1.jpg);
     background-size: cover;
 }
 
-.darkest{
-    grid-area: darkest;
-    background: url(../images/jupiter-lik/Darkest.gif);
+.Whirlpool{
+    grid-area: Whirlpool;
+    background: url(../images/annat/Whirlpool_Galaxy.jpg);
     background-size: cover;
-}
-
-.eaten{
-    grid-area: eaten;
-    background: url(../images/jupiter-lik/Eaten_Planet.gif);
-    background-size: cover;
-}
-
-.farthest{
-    grid-area: farthest;
-    background: url(../images/jupiter-lik/Farthest.gif);
-    background-size: cover;
-}
-
-.fastestorbit{
-    grid-area: fastestorbit;
-    background: url(../images/jupiter-lik/Fastest_Orbit.gif);
-    background-size: cover;
-}
-
-.glass{
-    grid-area: glass;
-    background: url(../images/jupiter-lik/Glass_Clouds.gif);
-    background-size: cover;
-}
-
-.hottest{
-    grid-area: hottest;
-    background: url(../images/jupiter-lik/Hottest.gif);
-    background-size: cover;
-}
-
-.leastdense{
-    grid-area: leastdense;
-    background: url(../images/jupiter-lik/Least_dense.gif);
-    background-size: cover;
-}
-
-.longestorbit{
-    grid-area: longestorbit;
-    background: url(../images/jupiter-lik/Longest_orbit.gif);
-    background-size: cover;
-}
-
-.magenta{
-    grid-area: magenta;
-    background: url(../images/jupiter-lik/Magenta_Color.gif);
-    background-size: cover;
-}
-
-.tatooine{
-    grid-area: tatooine;
-    background: url(../images/jupiter-lik/Tatooine_Like.gif);
-    background-size: cover;
+    background-position: center;
 }
 
 a{
@@ -128,26 +125,12 @@ div{
     color: var(--text_light);
     font-family:'Good_Timing';
     font-size: 16px;
+
     /* center the text on the links */
 }
 
 /* font för h1 */
 @font-face{
-    /* font-family:'Bright_Orchid';
-    src: url('fonts/Bright_Orchid.ttf');
-    font-weight: normal;
-    font-style: normal; */
-
-    /* font-family:'Mirage_Bold';
-    src: url('fonts/Mirage_Bold_Free.ttf');
-    font-weight: normal;
-    font-style: normal; */
-
-    /* font-family:'Nasalization';
-    src: url('fonts/Nasalization.otf');
-    font-weight: normal;
-    font-style: normal; */
-
     font-family:'Good_Timing';
     src: url('../fonts/Good_Timing.otf');
     font-weight: normal;

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+:root{
+    --bg_stars: url(../images/background_stars.gif);
+    --bg_black: black;
+    --text_light: white;
+    --border_light: 1px solid cyan;
+    --border_light2: 1px solid red;
+    
+}
+
+body{
+    background: var(--bg_stars);
+    color: var(--text_light);
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    /* margin: 5px; */
+    padding: 10px;
+    background: var(--bg_black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 20px 0 0 0;
+    padding: 0px;
+    font-family: 'Good_Timing';
+    text-align: center;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article{
+    background: var(--bg_black);
+    padding: 30px;
+    margin: 10px;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family:'Good_Timing';
+    src: url('../fonts/Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -26,6 +26,7 @@ h1{
     color: var(--text_light);
     font-family:'Good_Timing';
     border: var(--border_light);
+    margin: 15px;
 }
 
 nav{
@@ -121,21 +122,6 @@ div{
 
 
 @font-face{
-    /* font-family:'Bright_Orchid';
-    src: url('fonts/Bright_Orchid.ttf');
-    font-weight: normal;
-    font-style: normal; */
-
-    /* font-family:'Mirage_Bold';
-    src: url('fonts/Mirage_Bold_Free.ttf');
-    font-weight: normal;
-    font-style: normal; */
-
-    /* font-family:'Nasalization';
-    src: url('fonts/Nasalization.otf');
-    font-weight: normal;
-    font-style: normal; */
-
     font-family:'Good_Timing';
     src: url('../fonts/Good_Timing.otf');
     font-weight: normal;
