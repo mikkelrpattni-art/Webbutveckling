@@ -1,12 +1,11 @@
 @charset "UTF-8";
-
+/* Ta bort border när klar */
 :root{
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 1px solid cyan;
-    --border_light2: 1px solid red;
-    
+    /* --border_light: 1px solid cyan;
+    --border_light2: 1px solid red; */
 }
 
 body{

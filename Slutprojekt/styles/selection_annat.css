@@ -4,9 +4,8 @@
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 1px solid cyan;
-    --border_light2: 1px solid red;
-    
+    /* --border_light: 1px solid cyan;
+    --border_light2: 1px solid red; */
 }
 
 body{
@@ -42,62 +41,63 @@ nav{
     ;
 }
 
-.andromeda{
+#andromeda{
     grid-area: andromeda;
     background: url(../images/annat/Andromeda.png);
     background-size: cover;
     background-position: center;
 }
 
-.hoagsobject{
+#hoagsobject{
     grid-area: hoagsobject;
     background: url(../images/annat/Hoags_object.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.M33{
+#M33{
     grid-area: M33;
     background: url(../images/annat/M33-X-7.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
-.M87{
+#M87{
     grid-area: M87;
     background: url(../images/annat/M87_star.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.NGC{
+#NGC{
     grid-area: NGC;
     background: url(../images/annat/NGC_6753.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.SaggitariusA{
+#SaggitariusA{
     grid-area: SaggitariusA;
     background: url(../images/annat/Saggitarius_Astar.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.Sombrero{
+#Sombrero{
     grid-area: Sombrero;
     background: url(../images/annat/Sombrero_Galaxy.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.TRAPPIST1{
+#TRAPPIST1{
     grid-area: TRAPPIST1;
     background: url(../images/annat/TRAPPIST-1.jpg);
     background-size: cover;
+    background-position: center;
 }
 
-.Whirlpool{
+#Whirlpool{
     grid-area: Whirlpool;
     background: url(../images/annat/Whirlpool_Galaxy.jpg);
     background-size: cover;
@@ -110,9 +110,9 @@ a{
     align-items: center;
     border:var(--border_light2);
     background: var(--bg_black);
-    margin: 20px;
     text-decoration: none;
-
+    background-color: rgba(0,0,0,0);
+    margin:20px;
 }
 
 div{
@@ -125,8 +125,6 @@ div{
     color: var(--text_light);
     font-family:'Good_Timing';
     font-size: 16px;
-
-    /* center the text on the links */
 }
 
 /* font för h1 */

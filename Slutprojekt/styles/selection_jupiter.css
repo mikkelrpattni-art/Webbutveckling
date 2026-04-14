@@ -4,9 +4,8 @@
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 1px solid cyan;
-    --border_light2: 1px solid red;
-    
+    /* --border_light: 1px solid cyan;
+    --border_light2: 1px solid red; */
 }
 
 body{
@@ -27,6 +26,7 @@ h1{
     font-family:'Good_Timing';
     border: var(--border_light);
     margin: 15px;
+    text-align: center;
 }
 
 nav{
@@ -43,67 +43,67 @@ nav{
     ;
 }
 
-.browndwarf{
+#browndwarf{
     grid-area: browndwarf;
     background: url(../images/jupiter-lik/Brown_Dwarf.gif);
     background-size: cover;
 }
 
-.darkest{
+#darkest{
     grid-area: darkest;
     background: url(../images/jupiter-lik/Darkest.gif);
     background-size: cover;
 }
 
-.eaten{
+#eaten{
     grid-area: eaten;
     background: url(../images/jupiter-lik/Eaten_Planet.gif);
     background-size: cover;
 }
 
-.farthest{
+#farthest{
     grid-area: farthest;
     background: url(../images/jupiter-lik/Farthest.gif);
     background-size: cover;
 }
 
-.fastestorbit{
+#fastestorbit{
     grid-area: fastestorbit;
     background: url(../images/jupiter-lik/Fastest_Orbit.gif);
     background-size: cover;
 }
 
-.glass{
+#glass{
     grid-area: glass;
     background: url(../images/jupiter-lik/Glass_Clouds.gif);
     background-size: cover;
 }
 
-.hottest{
+#hottest{
     grid-area: hottest;
     background: url(../images/jupiter-lik/Hottest.gif);
     background-size: cover;
 }
 
-.leastdense{
+#leastdense{
     grid-area: leastdense;
     background: url(../images/jupiter-lik/Least_dense.gif);
     background-size: cover;
 }
 
-.longestorbit{
+#longestorbit{
     grid-area: longestorbit;
     background: url(../images/jupiter-lik/Longest_orbit.gif);
     background-size: cover;
 }
 
-.magenta{
+#magenta{
     grid-area: magenta;
     background: url(../images/jupiter-lik/Magenta_Color.gif);
     background-size: cover;
 }
 
-.tatooine{
+#tatooine{
     grid-area: tatooine;
     background: url(../images/jupiter-lik/Tatooine_Like.gif);
     background-size: cover;
@@ -115,7 +115,8 @@ a{
     align-items: center;
     border:var(--border_light2);
     background: var(--bg_black);
-    margin: 20px;
+    background-color: rgba(0,0,0,0);
+    margin:20px;
     text-decoration: none;
 
 }

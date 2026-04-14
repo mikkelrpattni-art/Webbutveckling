@@ -4,9 +4,8 @@
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 1px solid cyan;
-    --border_light2: 1px solid red;
-    
+    /* --border_light: 1px solid cyan;
+    --border_light2: 1px solid red; */
 }
 
 body{
@@ -42,55 +41,55 @@ nav{
     ;
 }
 
-.hot_ice{
+#hot_ice{
     grid-area: hot_ice;
     background: url(../images/jord-lik/Burning_Ice.gif);
     background-size: cover;
 }
 
-.closest{
+#closest{
     grid-area: closest;
     background: url(../images/jord-lik/Closest.gif);
     background-size: cover;
 }
 
-.consumed{
+#consumed{
     grid-area: consumed;
     background: url(../images/jord-lik/Consumed.gif);
     background-size: cover;
 }
 
-.diamond{
+#diamond{
     grid-area: diamond;
     background: url(../images/jord-lik/Diamond_Planet.gif);
     background-size: cover;
 }
 
-.first{
+#first{
     grid-area: first;
     background: url(../images/jord-lik/First_discovered.gif);
     background-size: cover;
 }
 
-.recent{
+#recent{
     grid-area: recent;
     background: url(../images/jord-lik/Recent.gif);
     background-size: cover;
 }
 
-.water{
+#water{
     grid-area: water;
     background: url(../images/jord-lik/Water_World.gif);
     background-size: cover;
 }
 
-.cold{
+#cold{
     grid-area: cold;
     background: url(../images/jord-lik/50_kelvin.gif);
     background-size: cover;
 }
 
-.carbon{
+#carbon{
     grid-area: carbon;
     background: url(../images/jord-lik/Carbon_Planet.gif);
     background-size: cover;
@@ -102,7 +101,8 @@ a{
     align-items: center;
     border:var(--border_light2);
     background: var(--bg_black);
-    margin: 20px;
+    background-color: rgba(0,0,0,0);
+    margin:20px;
     text-decoration: none;
 
 }
@@ -120,7 +120,7 @@ div{
     /* center the text on the links */
 }
 
-
+/* font för h1 */
 @font-face{
     font-family:'Good_Timing';
     src: url('../fonts/Good_Timing.otf');

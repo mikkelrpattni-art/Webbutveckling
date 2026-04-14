@@ -4,23 +4,24 @@
     --bg_stars: url(images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 1px solid cyan;
-}
-
-h1{
-    color: var(--text_light);
+    /* --border_light: 1px solid cyan; */
 }
 
 body{
     background: var(--bg_stars);
-    margin:0;
+    margin: 0;
 }
 
 header{
     color: var(--text_light);
     border: var(--border_light);
-    height: 70px;
     font-family:'Good_Timing';
+}
+
+h1{
+    color: var(--text_light);
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 nav{
@@ -46,18 +47,30 @@ div{
 
 a{
     position: absolute;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Storlek */
+p{
+    border: var(--border_light);
+    position: relative;
+    top:-35px;
+    color: var(--text_light);
+    font-family:'Good_Timing';
+}
+
+/* Storlek på divs */
 #jupiter-lik{
-    background: url(images/jupiter-lik/Fastest_Orbit.gif);
+    background: url(images/jupiter-lik/Tatooine_Like.gif);
     background-size: cover;
     height: 75px;
     width: 75px;
 }
 
 #jord-lik{
-    background: url(images/jord-lik/Diamond_Planet.gif);
+    background: url(images/jord-lik/50_kelvin.gif);
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -66,11 +79,12 @@ a{
 #annat{
     background: url(images/annat/Hoags_object.jpg);
     background-size: cover;
+    background-position: center;
     height: 50px;
     width: 50px;
 }
 
-/* position :hover */
+/* position på divs när :hover */
 nav:hover #link1{
     animation: none;
     top: 162px;
@@ -89,7 +103,7 @@ nav:hover #link3{
     left: 175px;
 }
 
-/* Animation position, should be centre of nav box.  */
+/* Animation position, ska vara i mitten av nav box.  */
 #link1{
     top: 162px;
     left: 162px;
