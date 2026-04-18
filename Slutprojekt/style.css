@@ -4,7 +4,7 @@
     --bg_stars: url(images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    /* --border_light: 1px solid cyan; */
+    --border_light: 2px solid white
 }
 
 body{
@@ -14,14 +14,13 @@ body{
 
 header{
     color: var(--text_light);
-    border: var(--border_light);
     font-family:'Good_Timing';
 }
 
 h1{
     color: var(--text_light);
     margin: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 nav{
@@ -31,6 +30,7 @@ nav{
     height: 400px;
     width: 400px;
     position:relative;
+    border-radius: 60px;
 }
 
 main{
@@ -39,7 +39,6 @@ main{
 }
 
 div{
-    border: var(--border_light);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +53,6 @@ a{
 }
 
 p{
-    border: var(--border_light);
     position: relative;
     top:-35px;
     color: var(--text_light);
@@ -156,4 +154,13 @@ nav:hover #link3{
     src: url('fonts/Good_Timing.otf');
     font-weight: normal;
     font-style: normal;
+}
+
+@media (min-width:500px) {
+    header{
+        color: var(--text_light);
+        font-family:'Good_Timing';
+        text-align: center;
+        padding: 10px;
+    }
 }

@@ -1,11 +1,9 @@
 @charset "UTF-8";
-/* Ta bort border när klar */
+
 :root{
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    /* --border_light: 1px solid cyan;
-    --border_light2: 1px solid red; */
 }
 
 body{
@@ -16,7 +14,6 @@ body{
 }
 
 header{
-    /* margin: 5px; */
     padding: 10px;
     background: var(--bg_black);
     display: flex;
@@ -31,8 +28,9 @@ h1{
     text-align: center;
 }
 
-h5{
+h2{
     font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
 }
 
 main{
@@ -42,7 +40,11 @@ main{
     align-items: center;
 }
 
-article{
+img{
+    border-radius: 20px;
+}
+
+div{
     background: var(--bg_black);
     padding: 30px;
     margin: 10px;
@@ -59,4 +61,14 @@ p{
     src: url('../fonts/Good_Timing.otf');
     font-weight: normal;
     font-style: normal;
+}
+
+@media (min-width:500px) {
+    main{
+        margin: 50px;
+    }
+
+    div{
+        margin: 50px;
+    }
 }

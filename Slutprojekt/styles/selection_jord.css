@@ -4,8 +4,7 @@
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    /* --border_light: 1px solid cyan;
-    --border_light2: 1px solid red; */
+    --border_light: 2px solid white;
 }
 
 body{
@@ -17,19 +16,16 @@ body{
 header{
     display: flex;
     justify-content: center;
-    border: var(--border_light);
     background: var(--bg_black);
 }
 
 h1{
     color: var(--text_light);
     font-family:'Good_Timing';
-    border: var(--border_light);
     margin: 15px;
 }
 
 nav{
-    display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -102,13 +98,13 @@ a{
     border:var(--border_light2);
     background: var(--bg_black);
     background-color: rgba(0,0,0,0);
-    margin:20px;
     text-decoration: none;
-
+    background-color: rgba(0,0,0,0);
+    margin:20px;
 }
 
 div{
-    border: var(--border_light);
+    border-radius: 20px;
     height: 150px;
     width: 150px;
     display: flex;
@@ -117,7 +113,10 @@ div{
     color: var(--text_light);
     font-family:'Good_Timing';
     font-size: 16px;
-    /* center the text on the links */
+}
+
+div:hover{
+    border: var(--border_light);
 }
 
 /* font för h1 */
@@ -126,4 +125,16 @@ div{
     src: url('../fonts/Good_Timing.otf');
     font-weight: normal;
     font-style: normal;
+}
+
+@media (min-width:700px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hot_ice    closest consumed"
+        "diamond    first   recent"
+        "water      cold    carbon"
+        ;
+    }
 }
