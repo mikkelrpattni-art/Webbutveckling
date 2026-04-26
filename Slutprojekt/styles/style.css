@@ -1,10 +1,17 @@
 @charset "UTF-8";
-/* Ta Bort border när klar */
+
+@font-face{
+    font-family:'Good_Timing';
+    src: url('../Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
-    --bg_stars: url(images/background_stars.gif);
+    --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 2px solid white
+    --border_light: 2px solid white;
 }
 
 body{
@@ -15,12 +22,19 @@ body{
 header{
     color: var(--text_light);
     font-family:'Good_Timing';
+    text-align: center;
 }
 
 h1{
     color: var(--text_light);
     margin: 15px;
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
 }
 
 nav{
@@ -30,18 +44,7 @@ nav{
     height: 400px;
     width: 400px;
     position:relative;
-    border-radius: 60px;
-}
-
-main{
-    display: flex;
-    justify-content: center;
-}
-
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50px;
 }
 
 a{
@@ -52,30 +55,36 @@ a{
     align-items: center;
 }
 
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 p{
     position: relative;
-    top:-35px;
+    top:-25px;
     color: var(--text_light);
     font-family:'Good_Timing';
 }
 
 /* Storlek på divs */
 #jupiter-lik{
-    background: url(images/jupiter-lik/Tatooine_Like.gif);
+    background: url(../images/jupiter-lik/Tatooine_Like.gif);
     background-size: cover;
     height: 75px;
     width: 75px;
 }
 
 #jord-lik{
-    background: url(images/jord-lik/50_kelvin.gif);
+    background: url(../images/jord-lik/50_kelvin.gif);
     background-size: cover;
     height: 50px;
     width: 50px;
 }
 
 #annat{
-    background: url(images/annat/Hoags_object.jpg);
+    background: url(../images/annat/Hoags_object.jpg);
     background-size: cover;
     background-position: center;
     height: 50px;
@@ -101,7 +110,7 @@ nav:hover #link3{
     left: 175px;
 }
 
-/* Animation position, ska vara i mitten av nav box.  */
+/* Animation position, ska vara i mitten av nav box.*/
 #link1{
     top: 162px;
     left: 162px;
@@ -149,18 +158,16 @@ nav:hover #link3{
     }
 }
 
-@font-face{
-    font-family:'Good_Timing';
-    src: url('fonts/Good_Timing.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @media (min-width:500px) {
     header{
         color: var(--text_light);
         font-family:'Good_Timing';
         text-align: center;
         padding: 10px;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
     }
 }

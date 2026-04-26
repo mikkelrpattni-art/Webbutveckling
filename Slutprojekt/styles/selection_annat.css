@@ -1,5 +1,13 @@
 @charset "UTF-8";
-/* Ta bort border när klar */
+
+/* font för h1 och div*/
+@font-face{
+    font-family:'Good_Timing';
+    src: url('../Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
@@ -35,6 +43,18 @@ nav{
     "Sombrero       TRAPPIST1"
     "Whirlpool      ."
     ;
+}
+
+@media (min-width:700px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "andromeda    hoagsobject   M33"
+        "M87          NGC           SaggitariusA"
+        "Sombrero     TRAPPIST1     Whirlpool"
+        ;
+    }
 }
 
 #andromeda{
@@ -121,28 +141,9 @@ div{
     color: var(--text_light);
     font-family:'Good_Timing';
     font-size: 16px;
+    background-position: center;
 }
 
 div:hover{
     border: var(--border_light);
-}
-
-/* font för h1 */
-@font-face{
-    font-family:'Good_Timing';
-    src: url('../fonts/Good_Timing.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media (min-width:700px) {
-    nav{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "andromeda    hoagsobject   M33"
-        "M87          NGC           SaggitariusA"
-        "Sombrero     TRAPPIST1     Whirlpool"
-        ;
-    }
 }

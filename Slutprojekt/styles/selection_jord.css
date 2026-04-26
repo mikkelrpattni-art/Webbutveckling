@@ -1,5 +1,13 @@
 @charset "UTF-8";
-/* Ta Bort border när klar */
+
+/* font för h1 och div*/
+@font-face{
+    font-family:'Good_Timing';
+    src: url('../Good_Timing.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
@@ -31,10 +39,22 @@ nav{
     grid-template-areas:
     "hot_ice    closest"
     "consumed   diamond"
-    "first      recent "
-    "water      cold   "
-    "carbon     .      "
+    "first      recent"
+    "water      cold"
+    "carbon     ."
     ;
+}
+
+@media (min-width:700px) {
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "hot_ice    closest consumed"
+        "diamond    first   recent"
+        "water      cold    carbon"
+        ;
+    }
 }
 
 #hot_ice{
@@ -95,12 +115,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:var(--border_light2);
-    background: var(--bg_black);
-    background-color: rgba(0,0,0,0);
-    text-decoration: none;
-    background-color: rgba(0,0,0,0);
     margin:20px;
+    text-decoration: none;
 }
 
 div{
@@ -117,24 +133,4 @@ div{
 
 div:hover{
     border: var(--border_light);
-}
-
-/* font för h1 */
-@font-face{
-    font-family:'Good_Timing';
-    src: url('../fonts/Good_Timing.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media (min-width:700px) {
-    nav{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "hot_ice    closest consumed"
-        "diamond    first   recent"
-        "water      cold    carbon"
-        ;
-    }
 }
