@@ -23,6 +23,7 @@ header{
     color: var(--text_light);
     font-family:'Good_Timing';
     text-align: center;
+    z-index: 1;
 }
 
 h1{
@@ -33,6 +34,7 @@ h1{
 
 main{
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 75vh;
 }
@@ -45,6 +47,7 @@ nav{
     width: 400px;
     position:relative;
     border-radius: 50px;
+    z-index: 0;
 }
 
 a{
@@ -158,16 +161,18 @@ nav:hover #link3{
     }
 }
 
-@media (min-width:500px) {
-    header{
-        color: var(--text_light);
-        font-family:'Good_Timing';
-        text-align: center;
-        padding: 10px;
-    }
+img{
+    display: none;
+}
 
+@media (min-width:900px) {
     main{
-        display: flex;
         align-items: center;
+        justify-content:space-around;
+    }    
+
+    img{
+        display: block;
+        border-radius: 5px;
     }
 }
