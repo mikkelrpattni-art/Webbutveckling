@@ -11,7 +11,7 @@
     --bg_stars: url(../images/background_stars.gif);
     --bg_black: black;
     --text_light: white;
-    --border_light: 2px solid white;
+    --border_light: 0.4vh solid white;
 }
 
 body{
@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    color: var(--text_light);
+    color: var(--text_light);   
     font-family:'Good_Timing';
     text-align: center;
     z-index: 1;
@@ -30,6 +30,7 @@ h1{
     color: var(--text_light);
     margin: 15px;
     background-color: rgba(0, 0, 0, 0.7);
+    font-size: 5vh;
 }
 
 main{
@@ -43,11 +44,12 @@ nav{
     border: var(--border_light);
     background: var(--bg_black);
     color: var(--text_light);
-    height: 400px;
-    width: 400px;
+    height: 60vh;
+    width: 60vh;
     position:relative;
-    border-radius: 50px;
+    border-radius: 25%;
     z-index: 0;
+    font-size: 2vh;
 }
 
 a{
@@ -75,48 +77,29 @@ p{
 #jupiter-lik{
     background: url(../images/jupiter-lik/Tatooine_Like.gif);
     background-size: cover;
-    height: 75px;
-    width: 75px;
+    height: 10vh;
+    width: 10vh;
 }
 
 #jord-lik{
     background: url(../images/jord-lik/50_kelvin.gif);
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 8vh;
+    width: 8vh;
 }
 
 #annat{
     background: url(../images/annat/Hoags_object.jpg);
     background-size: cover;
     background-position: center;
-    height: 50px;
-    width: 50px;
-}
-
-/* position på divs när :hover */
-nav:hover #link1{
-    animation: none;
-    top: 162px;
-    left: 30px;
-}
-
-nav:hover #link2{
-    animation: none;
-    top: 175px;
-    left: 300px;
-}
-
-nav:hover #link3{
-    animation: none;
-    top: 175px;
-    left: 175px;
+    height: 8vh;
+    width: 8vh;
 }
 
 /* Animation position, ska vara i mitten av nav box.*/
 #link1{
-    top: 162px;
-    left: 162px;
+    top: 25vh;
+    left: 25vh;
     animation-name: jupiter_orbit;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -124,8 +107,8 @@ nav:hover #link3{
 }
 
 #link2{
-    top: 175px;
-    left: 175px;
+    top: 26vh;
+    left: 26vh;
     animation-name: earth_orbit;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -133,46 +116,67 @@ nav:hover #link3{
 }
 
 #link3{
-    top: 175px;
-    left: 175px;
+    top: 26vh;
+    left: 26vh;
 }
 
+/* position på divs när :hover */
+nav:hover #link1{
+    animation: none;
+    top: 25vh;
+    left: 6vh;
+}
+
+nav:hover #link2{
+    animation: none;
+    top: 26vh;
+    left: 42vh;
+}
+
+nav:hover #link3{
+    animation: none;
+    top: 26vh;
+    left: 26vh;
+}
 @keyframes jupiter_orbit{
     0% {
-        transform: rotate(0deg) 
-              translateY(150px) rotate(0deg);
+        transform: rotate(0deg) translateY(22vh) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg) 
-              translateY(150px) rotate(-360deg);
+        transform: rotate(360deg) translateY(22vh) rotate(-360deg);
     }
 }
 
 @keyframes earth_orbit{
     0% {
-        transform: rotate(0deg) 
-              translateY(80px) rotate(0deg);
+        transform: rotate(0deg) translateY(12vh) rotate(0deg);
     }
 
     100% {
-        transform: rotate(360deg) 
-              translateY(80px) rotate(-360deg);
+        transform: rotate(360deg) translateY(12vh) rotate(-360deg);
     }
 }
 
 img{
     display: none;
+    height: 75vh; 
+    width: 20vw;
+    border-radius: 5px;
 }
 
 @media (min-width:900px) {
+
     main{
-        align-items: center;
         justify-content:space-around;
     }    
 
     img{
         display: block;
-        border-radius: 5px;
+    }
+
+    nav{
+        height: 60vh;
+        width: 60vh;
     }
 }
