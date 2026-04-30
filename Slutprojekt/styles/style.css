@@ -138,6 +138,7 @@ nav:hover #link3{
     top: 26vh;
     left: 26vh;
 }
+
 @keyframes jupiter_orbit{
     0% {
         transform: rotate(0deg) translateY(22vh) rotate(0deg);
@@ -165,7 +166,7 @@ img{
     border-radius: 5px;
 }
 
-@media (min-width:900px) {
+@media (min-width:130vh) {
 
     main{
         justify-content:space-around;
